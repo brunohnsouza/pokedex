@@ -31,6 +31,7 @@
 - HTML e CSS
 - JavaScript
 - Git e GitHub
+- [http-server](https://www.npmjs.com/package/http-server)
 - Layouts:
 
     - [Dark UI Desing - Pokédex | Daniela Resende](https://www.behance.net/gallery/168671299/Dark-UI-Study-Pokdex?tracking_source=search_projects%7Cpokedex)
