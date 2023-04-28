@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Souza" />
+    <meta name="description" content="Pokédex com as duas primeiras gerações do Pokémon."/>
+    <meta name="keywords" content="Pokédex, Pókémon, API, Front-end">
+    <title>Pokédex | Encontre seu Pokémon!</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">   
+    <link rel="stylesheet" href="./assets/css/pokedex.css">
+</head>
+<body>
+    
+    <!-- LOADING -->
+    <div class="p-loading">
+        <span class="loader"></span>
+    </div>
+
+    <main class="content">
+
+        <!-- TOP -->
+        <div id="headline">
+
+            <div id="headline__info">
+                
+                <div id="title-badge">
+                    <h1>Pokédex</h1>
+                    <span class="badge initial-info">+400 Pókemons!</span>
+                </div>
+                <p>Encontre seu Pokémon por nome ou tipo! Clique nele para saber mais informações.</p>
+            
+            </div>
+
+            <div id="headline__search">
+
+                <div id="input-wrapper">
+                    <label class="sr-only" for="search-pokemon">Buscar pokémon</label>
+                    <input id="search-pokemon" type="text" placeholder="Digite o nome do Pokémon...">
+                    <img src="./assets/img/search.svg" alt="Ícone de uma lupa de vidro.">
+                </div>
+
+                <button id="btnfilter" title="Filtrar" aria-count="0">
+                    <img src="./assets/img/funnel.svg" alt="Ícone de um funil">
+                </button>
+
+                <dialog id="filter-options">
+                    <div class="container">
+                        <h3>Filtro</h3>
+
+                        <button type="button" id="btnCloseFilter" title="Fechar"></button>
+
+                        <!-- TYPES -->
+                        <div id="content-types">
+                            <h4>Tipos</h4>
+
+                            <div class="filters types">
+                                <input class="sr-only" type="radio" name="option-type" id="all-types" value="all-types" checked>
+                                <label class="item types" for="all-types">Todos</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="one-type" value="one-type">
+                                <label class="item types" for="one-type">Normal</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="two-type" value="two-type">
+                                <label class="item types" for="two-type">Grama</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="three-type" value="three-type">
+                                <label class="item types" for="three-type">Fogo</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="four-type" value="four-type">
+                                <label class="item types" for="four-type">Água</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="five-type" value="five-type">
+                                <label class="item types" for="five-type">Elétrico</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="six-type" value="six-type">
+                                <label class="item types" for="six-type">Gelo</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="seven-type" value="seven-type">
+                                <label class="item types" for="seven-type">Terra</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="eight-type" value="eight-type">
+                                <label class="item types" for="eight-type">Voador</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="nine-type" value="nine-type">
+                                <label class="item types" for="nine-type">Venenoso</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="ten-type" value="ten-type">
+                                <label class="item types" for="ten-type">Lutador</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="eleven-type" value="eleven-type">
+                                <label class="item types" for="eleven-type">Psíquico</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="twelve-type" value="twelve-type">
+                                <label class="item types" for="twelve-type">Sombrio</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="thirteen-type" value="thirteen-type">
+                                <label class="item types" for="thirteen-type">Pedra</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="fourteen-type" value="fourteen-type">
+                                <label class="item types" for="fourteen-type">Inseto</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="fifteen-type" value="fifteen-type">
+                                <label class="item types" for="fifteen-type">Fantasma</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="sixteen-type" value="sixteen-type">
+                                <label class="item types" for="sixteen-type">Metal</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="seventeen-type" value="seventeen-type">
+                                <label class="item types" for="seventeen-type">Dragão</label>
+
+                                <input class="sr-only" type="radio" name="option-type" id="eighteen-type" value="eighteen-type">
+                                <label class="item types" for="eighteen-type">Fada</label>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+            </div>
+            
+        </div>
+
+        <!-- MIDDLE -->
+        <ol id="pokemonList" class="pokemons">
+            <!-- POKEMONS HERE -->
+        </ol>
+
+        <dialog id="more-info-pokemon">
+        </dialog>
+
+        <!-- BOTTOM -->
+        <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Carregar mais
+            </button>
+        </div>
+
+    </main>
+
+    <script src="./assets/js/index.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --primary-color: #F5F5F5;
+    --secundary-color: #535353;
+    --tertiary-color: #CACACA;
+    --quaternery-color: #1F1F1F;
+    --quinary-color: #191919;
+    --yellow-color: #FFCC00;
+    --blue-dark: #283041;
+    --blue-light: #8B9DB9;
+    --white-color: #FFF;
+    --white-color-100: #F4F2F7;
+    --heart-url: url("../../../img/heart.svg");
+    --heart-fill-url: url("../../../img/heart-fill.svg");
+    --normal-color: #a6a877;
+    --grass-color: #8BBE8A;
+    --fire-color: #ffa756;
+    --water-color: #58ABF6;
+    --electric-color: #F2CB55;
+    --ice-color: #98d5d7;
+    --ground-color: #dfbf69;
+    --flying-color: #a98ff0;
+    --poison-color: #695C97;
+    --fighting-color: #bf3029;
+    --psychic-color: #f65687;
+    --dark-color: #725847;
+    --rock-color: #b8a137;
+    --bug-color: #8BD674;
+    --ghost-color: #6e5896;
+    --steel-color: #b9b7cf;
+    --dragon-color: #6f38f6;
+    --fairy-color: #f9aec7;
+    --icon-close-modal: url("../img/x-dark.svg");
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--quinary-color);
+}
+
+button {
+    all: unset;
+}
+
+.content-more-info {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: .8rem;
+    height: .8rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color:var(--secundary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-dark);
+}
+
+::-webkit-scrollbar-thumb:is(:hover) {
+  opacity: .87;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+dialog {
+    margin: auto;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: .8rem;
+    width: min(80vw, 100%);
+}
+
+dialog .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2.4rem;
+    position: relative;
+    background-color: var(--quinary-color);
+}
+
+/* CSS TRICKS */
+
+.sr-only {
+    position: absolute;
+    width: 0.625rem;
+    height: 0.625rem;
+    padding: 0;
+    margin: -0.625rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border-width: 0;
+    white-space: nowrap;
+}
+
+.nth-capitalize {
+    text-transform: none;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* 
+    ==============
+    POKÉMON COLORS
+    ==============
+*/
+
+.normal {
+    background-color: var(--normal-color);
+}
+
+.grass {
+    background-color: var(--grass-color);
+}
+
+.fire {
+    background-color: var(--fire-color);
+}
+
+.water {
+    background-color: var(--water-color);
+}
+
+.electric {
+    background-color: var(--electric-color);
+}
+
+.ice {
+    background-color: var(--ice-color);
+}
+
+.ground {
+    background-color: var(--ground-color);
+}
+
+.flying {
+    background-color: var(--flying-color);
+}
+
+.poison {
+    background-color: var(--poison-color);
+}
+
+.fighting {
+    background-color: var(--fighting-color);
+}
+
+.psychic {
+    background-color: var(--psychic-color);
+}
+
+.dark {
+    background-color: var(--dark-color);
+}
+
+.rock {
+    background-color: var(--rock-color);
+}
+
+.bug {
+    background-color: var(--bug-color);
+}
+
+.ghost {
+    background-color: var(--ghost-color);
+}
+
+.steel {
+    background-color: var(--steel-color);
+}
+
+.dragon {
+    background-color: var(--dragon-color);
+}
+
+.fairy {
+    background-color: var(--fairy-color);
+}
+
+/* 
+    =============
+    POKÉMON ICONS
+    =============
+*/
+
+.icon {
+    display: flex;
+    align-items: center;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.icon.normal {
+    background: url("../img/icons/normal.svg") no-repeat center/cover;
+}
+.icon.grass {
+    background: url("../img/icons/grass.svg") no-repeat center/cover;
+}
+.icon.fire {
+    background: url("../img/icons/fire.svg") no-repeat center/cover;
+}
+.icon.water {
+    background: url("../img/icons/water.svg") no-repeat center/cover;
+}
+.icon.electric {
+    background: url("../img/icons/electric.svg") no-repeat center/cover;
+}
+.icon.ice {
+    background: url("../img/icons/ice.svg") no-repeat center/cover;
+}
+.icon.ground {
+    background: url("../img/icons/ground.svg") no-repeat center/cover;
+}
+.icon.flying {
+    background: url("../img/icons/flying.svg") no-repeat center/cover;
+}
+.icon.poison {
+    background: url("../img/icons/poison.svg") no-repeat center/cover;
+}
+.icon.fighting {
+    background: url("../img/icons/fighting.svg") no-repeat center/cover;
+}
+.icon.psychic {
+    background: url("../img/icons/psychic.svg") no-repeat center/cover;
+}
+.icon.dark {
+    background: url("../img/icons/dark.svg") no-repeat center/cover;
+}
+.icon.rock {
+    background: url("../img/icons/rock.svg") no-repeat center/cover;
+}
+.icon.bug {
+    background: url("../img/icons/bug.svg") no-repeat center/cover;
+}
+.icon.ghost {
+    background: url("../img/icons/ghost.svg") no-repeat center/cover;
+}
+.icon.steel {
+    background: url("../img/icons/steel.svg") no-repeat center/cover;
+}
+.icon.dragon {
+    background: url("../img/icons/dragon.svg") no-repeat center/cover;
+}
+.icon.fairy {
+    background: url("../img/icons/fairy.svg") no-repeat center/cover;
+}
