@@ -240,9 +240,11 @@ const app = {
 
                     }) 
     
-                } 
-
-                this.getListElement(elements.pokemonList, (card) => card.style.display = "flex")
+                } else {
+                    
+                    this.getListElement(elements.pokemonList, (card) => card.style.display = "flex")
+                    
+                }
 
             })
 
