@@ -61,8 +61,6 @@
 | Psychic           | ![#f65687](https://via.placeholder.com/10/f65687?text=+) #F65687 |
 | Dark              | ![#695C97](https://via.placeholder.com/10/725847?text=+) #725847 |
 | Rock              | ![#b8a137](https://via.placeholder.com/10/b8a137?text=+) #B8A137 |
-| Dark              | ![#695C97](https://via.placeholder.com/10/725847?text=+) #725847 |
-| Dark              | ![#695C97](https://via.placeholder.com/10/725847?text=+) #725847 |
 | Bug               | ![#8BD674](https://via.placeholder.com/10/8BD674?text=+) #8BD674 |
 | Ghost             | ![#6e5896](https://via.placeholder.com/10/6e5896?text=+) #6E5896 |
 | Steel             | ![#b9b7cf](https://via.placeholder.com/10/b9b7cf?text=+) #B9B7CF |
